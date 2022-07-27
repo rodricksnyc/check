@@ -34,7 +34,7 @@ const WEO = (props) => {
     </tr>
     </thead>
     <tbody>
-    <WEORadioButtons/>
+    <WEORadioButtons eventKey={props.eventKey}/>
     </tbody>
     </Table>
 

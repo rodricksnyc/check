@@ -7,6 +7,7 @@ import { Accordion, AccordionButton, AccordionCollapse, AccordionContext, Alert,
 var selectedButtons = [
 
     {
+      showOnly: 0,
       comment:"SEO review: Align with DE lead to ensure all SEO components have been considered",
       tooltip: <TooltipButton title="See <a target='_blank' href='https://gibbssoellinc.sharepoint.com/:x:/r/sites/PMPCTown/_layouts/15/Doc.aspx?sourcedoc=%7B77E83676-290F-4C05-AB0C-A7884E218359%7D&file=Account_Delegations_2021.xlsx&action=default&mobileredirect=true'>Account Delegations spreadsheet</a> to confirm who the DE lead is."/>,
       name: 'seoReview',
@@ -29,6 +30,7 @@ var selectedButtons = [
     },
 
     {
+      showOnly: 0,
       comment:'Verify design: Compare rendered page against Creative wireframes. Note/remind Creative of deviations',
       tooltip: '',
       name: 'verifyDesign',
@@ -53,6 +55,8 @@ var selectedButtons = [
 
 
 
+
+
 ];
 
 function WEORadioButtons(props) {
@@ -61,10 +65,15 @@ function WEORadioButtons(props) {
 var buttons = [];
 
 
-selectedButtons.forEach(function(selectedButton, i){
+ selectedButtons.forEach(function(selectedButton, i){
+
+   if(selectedButton.showOnly === props.eventKey) {
+
+
+
     buttons.push(
 
-      <tr className="mx-row">
+      <tr className="mx-row hideThis">
       <td align="top" className="mx-question">
 
       <p className="prompt gray"><span>{selectedButton.comment}</span>
@@ -112,6 +121,8 @@ selectedButtons.forEach(function(selectedButton, i){
 
 
     )
+
+     }
   });
 
 

@@ -21,60 +21,62 @@ import Open from "./Open";
 import TooltipButton from "./TooltipButton";
 
 
-var selectedCards = [
-
-    {
-      header: 'HEAD',
-      body: <Head/>,
-    },
-    {
-      header: 'HTML',
-      body: <Html/>,
-    },
-    {
-      header: 'CSS',
-      body: <Css/>,
-    },
-    {
-      header: 'NAVIGATION',
-      body:  <Navigation />,
-    },
-    {
-      header: 'IMAGES',
-      body: <Images />,
-    },
-    {
-      header: 'COPY',
-      body: <Copy />,
-    },
-    {
-      header: 'ACCESSIBILITY',
-      body: <Accessibility />,
-    },
-    {
-      header: 'USER EXPERIENCE',
-      body:  <UserExperience />,
-    },
-    {
-      header: 'TECHNICAL',
-      body: <Technical />,
-    },
-    {
-      header: 'TEAM SPECIFIC: MULTICHANNEL EXCELLENCE',
-      body: <MultichannelExcellence />,
-    },
-    {
-      header: 'TEAM SPECIFIC: MEASUREMENT',
-      body: <Measurement />,
-    },
-    {
-      header: 'TEAM SPECIFIC: WEO',
-      body:  <WEO />,
-    },
-];
 
 function Accordions(props) {
 
+
+
+  var selectedCards = [
+
+      {
+        header: 'HEAD',
+        body: <Head/>,
+      },
+      {
+        header: 'HTML',
+        body: <Html/>,
+      },
+      {
+        header: 'CSS',
+        body: <Css/>,
+      },
+      {
+        header: 'NAVIGATION',
+        body:  <Navigation />,
+      },
+      {
+        header: 'IMAGES',
+        body: <Images />,
+      },
+      {
+        header: 'COPY',
+        body: <Copy />,
+      },
+      {
+        header: 'ACCESSIBILITY',
+        body: <Accessibility />,
+      },
+      {
+        header: 'USER EXPERIENCE',
+        body:  <UserExperience />,
+      },
+      {
+        header: 'TECHNICAL',
+        body: <Technical />,
+      },
+      {
+        header: 'TEAM SPECIFIC: MULTICHANNEL EXCELLENCE',
+        body: <MultichannelExcellence />,
+      },
+      {
+        header: 'TEAM SPECIFIC: MEASUREMENT',
+        body: <Measurement />,
+      },
+      {
+        header: 'TEAM SPECIFIC: WEO',
+        body:  <WEO eventKey={props.eventKey}/>,
+      },
+  ];
 
 var cards = [];
 
