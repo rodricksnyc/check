@@ -3,6 +3,7 @@ import React from "react";
 import TooltipButton from "./TooltipButton";
 import { Accordion, AccordionButton, AccordionCollapse, AccordionContext, Alert, Anchor, Badge, Breadcrumb, BreadcrumbItem, Button, ButtonGroup, ButtonToolbar, Card, CardGroup, CardImg, Carousel, CarouselItem, CloseButton, Col, Collapse, Container, Dropdown, DropdownButton, Fade, Figure, FloatingLabel, Form, FormCheck, FormControl, FormFloating, FormGroup, FormLabel, FormSelect, FormText, Image, InputGroup, ListGroup, ListGroupItem, Modal, ModalBody, ModalDialog, ModalFooter, ModalHeader, ModalTitle, Nav, NavDropdown, NavItem, NavLink, Navbar, NavbarBrand, Offcanvas, OffcanvasBody, OffcanvasHeader, OffcanvasTitle, Overlay, OverlayTrigger, PageItem, Pagination, Placeholder, PlaceholderButton, Popover, PopoverBody, PopoverHeader, ProgressBar, Ratio, Row, SSRProvider, Spinner, SplitButton, Stack, Tab, TabContainer, TabContent, TabPane, Table, Tabs, ThemeProvider, Toast, ToastBody, ToastContainer, ToastHeader, ToggleButton, ToggleButtonGroup, Tooltip} from 'react-bootstrap';
 
+const comment1 = `<sup>&trade;</sup> and <sup>&reg;</sup>: All trademark and registration symbols are using &trade; and &reg; syntax and superscripted`
 
 var selectedButtons = [
 
@@ -29,7 +30,7 @@ var selectedButtons = [
     },
 
     {
-      comment:'<sup>&trade;</sup> and <sup>&reg;</sup>: All trademark and registration symbols are using &trade; and &reg; syntax and superscripted',
+      comment: <div dangerouslySetInnerHTML={{__html:comment1}} />,
       tooltip: '',
       name: 'superscript',
       value1: "Superscript_Pass",

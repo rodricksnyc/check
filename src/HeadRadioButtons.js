@@ -13,7 +13,7 @@ const myHTML5 = `<link rel="canonical" href="http://example.com/2017/09/a-new-ar
 const myHTML6 = `<meta property="og:title" content="Lorem Ipsum Dolor">`
 const myHTML7 = `<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;1,700&display=swap" rel="stylesheet" />`
 
-const comment1 = `Title: Page includes a <title> tag that is ≤60 characters, relevant to the content of the page, and follows standard naming conventions`
+const comment1 = `Title: Page includes a <span class="highlight pink">&#x3c;title&#x3e;</span> tag that is ≤60 characters, relevant to the content of the page, and follows standard naming conventions`
 
 var selectedButtons = [
 
@@ -84,8 +84,8 @@ var selectedButtons = [
     },
 
     {
-      comment: 'Title: Page includes a <title> tag that is ≤60 characters, relevant to the content of the page, and follows standard naming conventions',
-      tooltip:   <TooltipButton text="For example: Syngenta US and Thrive have different suffixes."/>,
+      comment: <div dangerouslySetInnerHTML={{__html:comment1}} />,
+      tooltip: <TooltipButton text="For example: Syngenta US and Thrive have different suffixes."/>,
       name: 'title',
       value1: "Title_Pass",
       id1: "Title_Pass",
