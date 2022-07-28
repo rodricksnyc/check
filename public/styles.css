@@ -1536,7 +1536,7 @@ button:focus{
 
 .back-to-top {
   position: fixed;
-  right: 1.25rem;
+  right: 1.25%;
   bottom: 9rem;
   z-index: 77;
   background: #BCF8F1;
@@ -3296,11 +3296,11 @@ display: none !important
   .hoverEffect .grid figure {
     height: 460px;
   }
+  .hdr-container {
 
-  .EEO1 h1 {
-    display: none;
+      flex-wrap: unset;
+
   }
-
   .EEO1 .large {
     margin-top: -10px;
   }
@@ -3505,11 +3505,20 @@ display: none !important
   }
 
   .EEO1 .end {
-    display: flex;
-    justify-content: unset;
-    align-items: center;
-    margin-right: 3em;
+  display: none
   }
+
+  .hdr-container {
+    min-height: 4rem;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    margin-left: 0 !important;
+    justify-content: center;
+    text-align: center;
+}
 
   .EEO1 .large {
     color: #ffffff;
@@ -3932,6 +3941,35 @@ footer h2 {
 
 
 @media (max-width:991px){
+
+
+  .nav-tabs .nav-item {
+      margin-bottom: 0;
+      min-width: 0em;
+      padding-top: 0em;
+      font-size: 14px;
+      line-height: 1
+  }
+
+  .options {
+      border: 3px solid #ff65e6;
+      margin: 2em .15em;
+      padding: 1em;
+      justify-content: center;
+  }
+
+  .options i {
+    width: unset;
+    margin: .5em 0em;
+}
+
+.nav-tabs .nav-link {
+
+    min-height: 5em;
+}
+
+
+
   .lightBlue {
     font-size: 2rem;
   }
@@ -4774,20 +4812,20 @@ table {
 }
 
 .mx-row {
-  background-color:white !important;
+  background-color:white;
   border-radius: 1rem
 }
 
 
 .mx-row-alt {
-  background-color:#ecfafe !important;
+  background-color:#ecfafe;
   border-radius: 1rem
 
 }
 
 
 tbody tr:nth-child(odd){
-    background-color:#ecfafe !important;
+    background-color:#ecfafe;
 }
 
 td {
@@ -4967,6 +5005,76 @@ tbody tr .form-check .radio-inline {
 
 @media (max-width:767px) {
 
+  .avatar {
+
+      display: none;
+  }
+
+ .nav-tabs {
+    border-bottom: none;
+    width: 100%;
+    display: flex !important;
+    flex-direction: column !important;
+}
+
+.nav-tabs .nav-item {
+    width: 100%;
+}
+
+.nav-tabs .nav-link {
+    min-height: 0em;
+}
+
+.accordion-header {
+    padding: .2em;
+    background-color: white !important;
+    position: relative;
+    z-index: 25;
+    margin: 1.5em 0em;
+    border-radius: .75rem;
+    font-size: 1.5em;
+}
+
+
+  tbody tr:nth-child(odd) {
+      background-color: transparent !important;
+  }
+
+  tbody tr .prompt span {
+      /* max-width: 70%; */
+      text-align: left;
+      font-size: 16px !important;
+      color: white;
+  }
+
+  .prompt i {
+      color: white;
+      font-weight: 700;
+  }
+
+  .table>:not(caption)>*>* {
+
+      border-bottom-width: 0px;
+
+  }
+
+  tbody tr .prompt {
+    padding: 0px 0px 0px 0px !important;
+    text-align: left;
+    font-size: 17px !important;
+
+  }
+
+  .ques-wrapper tbody tr .form-check label {
+      padding-left: 37px !important;
+      padding-right: 5px;
+      margin-top: 15px;
+      font-size: 16px !important;
+      /* color: #007bbc; */
+      color: white;
+  }
+
+
   .form-check .moveBelow {
     display: flex
   }
@@ -5010,9 +5118,9 @@ tbody tr .form-check .radio-inline {
   }
 
   tbody tr .prompt {
-    padding: 0px 0px 0px 10px !important;
+    padding: 0px 0px 0px 0px !important;
     text-align: left;
-    font-size: 16px !important;
+    font-size: 17px !important;
 
   }
 
@@ -5021,11 +5129,12 @@ tbody tr .form-check .radio-inline {
   }
 
   .ques-wrapper tbody tr .form-check label {
-    padding-left: 37px !important;
-    padding-right: 5px;
-    margin-top: 8px;
-    font-size: 16px !important;
-    /* color: #007bbc; */
+      padding-left: 37px !important;
+      padding-right: 5px;
+      margin-top: 15px;
+      font-size: 16px !important;
+      /* color: #007bbc; */
+      color: white;
   }
 
   .form-check {
@@ -5063,7 +5172,7 @@ tbody tr .form-check .radio-inline {
 
 
   tbody tr .form-check input[type="radio"] + label::before {
-    border: 1px solid #611C35;
+
     content: "";
     height: 18px;
     left: 10px;
@@ -5077,12 +5186,12 @@ tbody tr .form-check .radio-inline {
   tbody tr .form-check input[type="radio"] + label::after {
     content: "";
 
-    border: 7px solid #611C35;
+
     border-radius: 50%;
     position: absolute;
     left: 12px;
     top: 23px;
-    color: #611C35;
+
     transition: opacity 0.2s ease-in-out;
   }
   .moveBelow {

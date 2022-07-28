@@ -30,47 +30,47 @@ function Accordions(props) {
 
       {
         header: 'HEAD',
-        body: <Head/>,
+        body: <Head eventKey={props.eventKey}/>,
       },
       {
         header: 'HTML',
-        body: <Html/>,
+        body: <Html eventKey={props.eventKey}/>,
       },
       {
         header: 'CSS',
-        body: <Css/>,
+        body: <Css eventKey={props.eventKey}/>,
       },
       {
         header: 'NAVIGATION',
-        body:  <Navigation />,
+        body:  <Navigation eventKey={props.eventKey}/>,
       },
       {
         header: 'IMAGES',
-        body: <Images />,
+        body: <Images eventKey={props.eventKey}/>,
       },
       {
         header: 'COPY',
-        body: <Copy />,
+        body: <Copy eventKey={props.eventKey}/>,
       },
       {
         header: 'ACCESSIBILITY',
-        body: <Accessibility />,
+        body: <Accessibility eventKey={props.eventKey}/>,
       },
       {
         header: 'USER EXPERIENCE',
-        body:  <UserExperience />,
+        body:  <UserExperience eventKey={props.eventKey}/>,
       },
       {
         header: 'TECHNICAL',
-        body: <Technical />,
+        body: <Technical eventKey={props.eventKey}/>,
       },
       {
         header: 'TEAM SPECIFIC: MULTICHANNEL EXCELLENCE',
-        body: <MultichannelExcellence />,
+        body: <MultichannelExcellence eventKey={props.eventKey}/>,
       },
       {
         header: 'TEAM SPECIFIC: MEASUREMENT',
-        body: <Measurement />,
+        body: <Measurement eventKey={props.eventKey}/>,
       },
       {
         header: 'TEAM SPECIFIC: WEO',

@@ -85,14 +85,14 @@ class App extends React.Component {
     </Row>
 
     <Row className="mt-2">
-    <Col xs={12} md={9}>
+    <Col xs={12} lg={9} md={12}>
 
 
     <Field label="URL OF PAGE" for="url" id="url"/>
 
     </Col>
 
-    <Col xs={12} md={3}>
+    <Col xs={12} lg={3} md={12}>
 
 
     <Field label="INITIAL TEST DATE" for="date" id="date" />

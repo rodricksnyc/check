@@ -12,11 +12,11 @@ function SelectTabs() {
   return (
 
     <Tabs
-    defaultActiveKey={'generic'}
+    defaultActiveKey={0}
     activeKey={key}
 
     onSelect={(key) => setKey(key)}
-    className="selectTabs">
+    className="mb-5">
     <Tab eventKey={0} title="GENERIC" value="Generic">
 
     <Accordions eventKey={0}/>
